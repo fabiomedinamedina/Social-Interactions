@@ -30,7 +30,7 @@ La estructura de este proyecto es de la siguiente manera:
   * Aquí se encuentran las rutas de para autenticación, validación, tweet, timeline y logout con la API de Twitter.
 4. Por último  el archivo server.js que integra los ficheros de configuración.
 
-## **Frontend**
+## **Estructura Frontend**
 
 Para esta parte de la integración del proyecto se realizó el frontend en React.js creando la estructura base con el comando:
 ```bash
