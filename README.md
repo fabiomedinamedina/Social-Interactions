@@ -14,12 +14,12 @@ Monorepositorio con backend y frontend con integración a la API de [Twitter](ht
     ```bash
     npm install
     ```
-4. Ejecutar backend y frontend
+4. Ejecutar dentro de los directorios backend y frontend
     ```bash
     npm start
     ```
 
-## **Backend**
+## **Estructura Backend**
 
 La estructura de este proyecto es de la siguiente manera:
 1. Directorio /config
@@ -31,6 +31,31 @@ La estructura de este proyecto es de la siguiente manera:
 4. Por último  el archivo server.js que integra los ficheros de configuración.
 
 ## **Frontend**
+
+Para esta parte de la integración del proyecto se realizó el frontend en React.js creando la estructura base con el comando:
+```bash
+create-react-app frontend
+```
+
+La estructura de directorio está definida de la siguiente manera:
+1. Directorio /src
+  * Directorio /components
+    * Componente login.js en el cual gestionamos la autenticación.
+    * Componente dashboard.js en el cual integramos los subcomponentes:
+      * shared/menu.js gestiona el logout.
+      * shared/profile.js presenta la información del usuario autenticado.
+      * listOfTweets.js integra el feed timeline:
+        * shared/tweet.js presenta la información del tweet individual.
+        * shared/loading.js simple loading mientras las peticiónes http se ejecutan.
+  * Directorio /images contiene imágenes usadas en este proyecto.
+  * Directorio /services
+    * config.js configuración de librería axios para hacer las peticiones https.
+    * api.js parametrización de las rutas de autenticación, timeline y crear tweet.
+
+### Autor
+Jegox González
+[LinkedIn](www.linkedin.com/in/jegox)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
