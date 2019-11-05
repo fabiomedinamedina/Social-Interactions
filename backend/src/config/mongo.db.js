@@ -1,7 +1,7 @@
 'use strict'
 const mongoose = require('mongoose')
 
-const url = 'mongodb://127.0.0.1/twitter'
+const url = 'mongodb+srv://rooter:Rooter123@cluster0-shotf.mongodb.net/test?retryWrites=true&w=majority'
 const options = { 
   useNewUrlParser: true ,
   useFindAndModify: false,
